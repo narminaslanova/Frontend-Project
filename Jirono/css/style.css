@@ -1,0 +1,251 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar{
+    margin-top: 25px !important;
+    font-family: 'Nunito', sans-serif;
+}
+.nav-logo .logo{
+    margin-top: 3px;
+    margin-right: 80px;
+}
+/* .nav-menu li{
+ padding-right: 0px !important;
+} */
+.nav-menu li a{
+    text-decoration: none;
+    color:#6F8BA4 !important; 
+    margin-top: 5px;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 14px;
+   
+}
+.header-buttons{
+    display: flex;
+    margin-right: 5px;
+    margin-top: 15px;
+    list-style-type: none;
+    text-decoration: none;
+}
+.header-buttons a{
+    padding: 3px 30px;
+    margin: 5px;
+    font-size: 14px;
+}
+.header-buttons #up{
+    background-color: #1A153A;
+    border: 1px solid #1A153A;
+    color: white !important;
+}
+.header-buttons #up:hover{
+    background-color: white;
+    color: #1A153A !important;
+}
+.header-buttons #in{
+    background-color: white;
+    color: #1A153A !important;
+}
+.header-buttons #in:hover{
+    background-color: #1A153A;
+    color: white !important;
+}
+#welcome .caption h1{
+    padding-top: 100px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.93px;
+    margin-bottom: 20px;
+    color: #1A153A !important;
+}
+#welcome{
+    margin-top: 100px;
+}
+#welcome .caption p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #697BA2;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin-bottom: 35px;
+}
+#welcome .caption a{
+    width: 170px;
+    margin-bottom: 0px;
+    background-color: #1A153A ;
+    color: white;
+    cursor: pointer;
+}  
+
+.first{
+    width: 49%;
+    height: 332px;
+    float: left;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+.first img{
+    max-width: 100%;
+    height: 219px;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 310px;
+  }
+  .third img{
+    max-width: 100%;
+    height: 219px;
+    border-radius: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .third{
+    width: 49%;
+    float: left;
+    position: absolute;
+    top: 316px;
+    left: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+.second{
+    width: 49%;
+    height: 251px;
+    float: right;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    overflow: hidden;
+}
+.pic:hover img{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.second img{
+    max-width: 99%;
+    height: 263px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+.fourth{
+    width: 49%;
+    height: 281px;
+    float: right;
+    position: absolute;
+    top: 271px;
+    right: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+.fourth img{
+    max-width: 99%;
+    height: 263px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  #welcome .pic-container .image-text{
+   /* position: absolute;
+   left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px; */
+    position: absolute;
+    z-index: 3;
+    width: 99%;
+    height: 94%;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(65, 38, 73, 0.685);
+    color: white;
+    border-radius: 10px;
+}
+#welcome .pic-container .image-text .inner{
+    padding-left: 10px;
+}
+
+#welcome .card{
+    position: relative;
+    height: 250px; 
+    box-shadow: 0px 0px 30px #ccc;
+    transition: .3s;
+}
+#welcome .card:hover{
+    background-color: #1A153A;
+}
+#welcome .card:hover .card-body{
+    color: white;
+}
+#welcome .card:hover .welcome-icon i{
+    color: #1A153A;
+}
+#welcome .card .welcome-icon{
+    background-color: #F7F6FF;
+    border-radius: 100%;
+    position: absolute;
+    padding: 20px 25px;
+    left: 90px;
+    top: 15px;
+}
+#welcome .card .card-body{
+    padding-top: 70px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    color: #6F8BA4;;
+}
+#welcome .card .card-body h5{
+    padding-top: 20px;
+}
+footer{
+    background: #1A153A;
+    padding-top: 70px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+footer ul{
+    list-style-type: none;
+}
+footer ul li{
+    padding-top: 10px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+    transition: padding-left 0.3s
+}
+footer ul li:hover a{
+    text-decoration: none;
+    color: white;
+    padding-left: 5px ;
+    
+}
+footer .info a{
+    text-decoration: none;
+    color: white;
+}
+.copyright{
+    text-align: center;
+    border-top: 1px solid #3C3761;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+  
