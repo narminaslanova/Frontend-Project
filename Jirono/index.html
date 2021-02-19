@@ -7,31 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.png">
     <title>Jirono-IT Solutions and Corporate Template</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/a3751cb7b1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div class="loader-image">
+
+    </div>
+
     <header>
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <!-- NAV START -->
-                    <nav class="nav-logo navbar navbar-expand-lg navbar-transparent bg-transparent">
+                    <nav class="nav-menu navbar navbar-expand-lg">
                         <a class="logo navbar-brand" href="#">
                             <img src="images/logo-dark.png" alt="">
                         </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="nav-menu navbar-nav mr-auto">
+                            <ul class="nav-list navbar-nav mr-auto">
                                 <li class="nav-item active">
                                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                                 </li>
@@ -75,6 +83,7 @@
         </div>
     </header>
     <main>
+        <!-- Welcome start -->
         <section id="welcome">
             <div class="container">
                 <div class="row">
@@ -116,11 +125,10 @@
 
                     </div> -->
                 </div>
-                <!-- Jirono features start -->
                 <div class="row mt-5 mb-5">
                     <div class="col-lg-3">
-                        <div class="card">
-                            <div class="welcome-icon">
+                        <div class="card wow animate__fadeInUp animate__animated">
+                            <div class="features-icon">
                                 <i class="fas fa-cloud"></i>
                             </div>
                             <div class="card-body">
@@ -130,8 +138,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="card">
-                            <div class="welcome-icon">
+                        <div class="card wow animate__fadeInUp animate__animated">
+                            <div class="features-icon">
                                 <i class="fas fa-laptop"></i>
                             </div>
                             <div class="card-body">
@@ -141,8 +149,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="card">
-                            <div class="welcome-icon">
+                        <div class="card wow animate__fadeInUp animate__animated">
+                            <div class="features-icon">
                                 <i class="fas fa-video"></i>
                             </div>
                             <div class="card-body">
@@ -152,8 +160,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="card">
-                            <div class="welcome-icon">
+                        <div class="card wow animate__fadeInUp animate__animated">
+                            <div class="features-icon">
                                 <i class="fas fa-server"></i>
                             </div>
                             <div class="card-body">
@@ -163,10 +171,109 @@
                         </div>
                     </div>
                 </div>
-                <!-- Jirono features end -->
             </div>
         </section>
-
+        <!-- Welcome end -->
+        <!-- Jirono features start -->
+        <section id="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="features-caption">
+                            <div class="text">
+                                <h2>Cloud Services</h2>
+                                <p>Phasellus vitae velit sit amet diam semper commodo quis quis <span
+                                        class="d-block">libero. Morbi consequat arcu
+                                        augue, molestie faucibus metus </span>ullamcorper vel.</p>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="#" class="btn">Near Cloud</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="#" class="btn">Office Cloud</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="#" class="btn">Backup Systems</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="#" class="btn">hybrid Cloud</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="#" class="btn">API CLoud</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="#" class="btn">SDK Cloud</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="#" class="btn">Web Services</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="#" class="btn">Cloud Hosting</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5">
+                        <div class="features-image wow animate__animated animate__fadeInLeft ">
+                            <img src="images/dark-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Jirono features end -->
+        <section id="design">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="design-image wow animate__animated animate__fadeInLeft">
+                            <img src="images/dark-2.png">
+                        </div>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-6">
+                        <div class="design-caption">
+                            <div class="text">
+                                <h2>Design & Development</h2>
+                                <p>Phasellus vitae velit sit amet diam semper commodo quis quis <span
+                                    class="d-block">libero. Morbi consequat arcu
+                                    augue, molestie faucibus metus </span>ullamcorper vel.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a href="#" class="btn">Web Design</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="#" class="btn">Mobile App Design</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="#" class="btn">Android Development</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="#" class="btn">IOS Development</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="#" class="btn">Back-End</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="#" class="btn">Fornt-End</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="#" class="btn">e-Commerce</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="#" class="btn">Print Design</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container">
@@ -221,7 +328,9 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 
