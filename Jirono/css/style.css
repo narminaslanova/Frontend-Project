@@ -108,7 +108,7 @@ body{
 }
  /* Navbar start */
 .nav-menu{
-    background-color: transparent !important;
+    /* background-color: transparent; */
     left: 0;
     right: 0;
     z-index: 999;
