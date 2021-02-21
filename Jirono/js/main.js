@@ -5,7 +5,7 @@ $(function(){
       });
 
     $(document).on("scroll",window,function(){
-        if($(window).scrollTop() > 80){
+        if($(window).scrollTop() > 100){
            $(".nav-menu").css({
             "position": "fixed",
             "background-color": "white",
@@ -15,15 +15,21 @@ $(function(){
            $("#up").css({
                "background":"linear-gradient(135deg, #1A153A 0%, #565178 100%)"
            })
+           $(".nav-menu-others").css({
+            "position": "fixed"
+           })
         }else{
             $(".nav-menu").css({
                 "position": "absolute",
                 "background-color": "transparent",
                 "height": "100px"
                });
-               $("#up").css({
+            $("#up").css({
                    "background":"#1A153A"
-               })
+            });
+            $(".nav-menu-others").css({
+                "position": "fixed"
+            })
         }
     });
    //counter

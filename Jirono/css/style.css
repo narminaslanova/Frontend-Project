@@ -94,17 +94,37 @@ body{
 }
 .parallax-about{
     background: url('../images/2.jpg') no-repeat fixed;
-    background-size: cover;
-    height: 300px;
+    background-size: cover ;
+    height: 400px;
     position: relative;
-   
+    top: 0;
+    left: 0;
+  
 }
+.parallax-about .about-caption{
+    color: white;
+    padding-top: 70px;
+    position: absolute;
+    top: 20%;
+    left: 42%;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.parallax-about .about-caption a{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding-right: 7px;
+    font-weight: 300;
+}
+
 .parallax-about .cover-image{
     background-color:#1A153A ;
     opacity: 0.4;
     height: 100%;
     background-size: cover;
-    
+    padding-bottom: 50px;
+    position: relative;
 }
  /* Navbar start */
 .nav-menu{
@@ -124,6 +144,7 @@ body{
     position: absolute;
     transition: all 0.5s;
     height: 80px ;
+    transition: all 0.5s;
 }
 .nav-menu .logo{
     margin-top: 3px;
@@ -278,34 +299,34 @@ body{
     line-height: 30px;
     font-size: 20px;
 } */
-#welcome .card{
+.same .card{
     position: relative;
     height: 250px; 
     box-shadow: 0px 0px 30px #ccc;
     transition: 0.3s;
 }
-#welcome .animated__delay-1{
+.same .animated__delay-1{
     animation-delay: .05s;
 }
-#welcome .animated__delay-2{
+.same .animated__delay-2{
     animation-delay: .1s;
 }
-#welcome .animated__delay-3{
+.same .animated__delay-3{
     animation-delay: .15s;
 }
-#welcome  .animated__delay-4{
+.same .animated__delay-4{
     animation-delay: .20s;
 }
-#welcome .card:hover{
+.same .card:hover{
     background-color: #1A153A;
 }
-#welcome .card:hover .card-body{
+.same .card:hover .card-body{
     color: white;
 }
-#welcome .card:hover .features-icon i{
+.same .card:hover .features-icon i{
     color: #1A153A;
 }
-#welcome .card .features-icon{
+.same .card .features-icon{
     background-color: #F7F6FF;
     border-radius: 100%;
     position: absolute;
@@ -313,12 +334,12 @@ body{
     left: 90px;
     top: 15px;
 }
-#welcome .card .card-body{
+.same .card .card-body{
     padding-top: 70px;
     text-align: center;
     color: #6F8BA4;;
 }
-#welcome .card .card-body h5{
+.same .card .card-body h5{
     padding-top: 20px;
 }
  /* Welcome area end */
@@ -633,6 +654,76 @@ footer .socials li{
     color: white;
     letter-spacing: 1px;
 }
+#ways{
+    padding: 100px 0px;
+    background-color: #F7FAFD;
+}
+#ways .text{
+    text-align: center;
+    letter-spacing: 1px;
+    padding-bottom: 50px;
+}
+#ways .text h3{
+    color: #3C3761;
+}
+#ways .text p{
+    color: #697BA2;
+}
+#ways .image{
+    width: 770px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#ways .image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: transform .4s;
+}
+#ways .image:hover img{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+#ways .layer{
+    background-color: white;
+    padding: 20px 20px;
+    position: absolute;
+    top: 10%;
+    width: 440px;
+    height: 360px;
+    right: 0px;
+    border-radius: 10px;
+    box-shadow: 0 2px 48px 0 rgb(0 0 0 / 8%);
+}
+#ways .mis-layer{
+    top: 25%;
+}
+#ways .layer h5{
+    color: #3C3761;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+#ways .layer p{
+    color: #6F8BA4;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+#ways .describing{
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
 
+.vis-image{
+    position: relative;
+    padding-left: 350px;
+}
+#ways .vis-layer{
+    position: absolute;
+    left: 0;
+    top: 15%;
+}
 
   
