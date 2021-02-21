@@ -105,8 +105,8 @@ body{
     color: white;
     padding-top: 70px;
     position: absolute;
-    top: 20%;
-    left: 42%;
+    top: 33%;
+    left: 44%;
     text-align: center;
     letter-spacing: 1px;
 }
@@ -125,6 +125,38 @@ body{
     background-size: cover;
     padding-bottom: 50px;
     position: relative;
+}
+.parallax-features {
+    background: url('../images/3.jpg') no-repeat fixed;
+    background-size: cover ;
+    height: 400px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.parallax-features .cover-image{
+    background-color:#1A153A ;
+    opacity: 0.5;
+    height: 100%;
+    background-size: cover;
+    padding-bottom: 50px;
+    position: relative;
+}
+.parallax-features .about-caption{
+    color: white;
+    padding-top: 70px;
+    position: absolute;
+    top: 20%;
+    left: 42%;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.parallax-features .about-caption a{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding-right: 7px;
+    font-weight: 300;
 }
  /* Navbar start */
 .nav-menu{
@@ -182,7 +214,7 @@ body{
     color: white;
 }
 .header-buttons #up:hover{
-    background-color: white;
+    background-color: white !important;
     color: #1A153A !important;
 }
 .header-buttons #in{
@@ -227,6 +259,9 @@ body{
     color: white;
     cursor: pointer;
 }  
+#welcome .caption a:hover{
+    background-color:  #100b2c;
+}
 #welcome .welcome-grid{
     display: grid;
     grid-template-areas:
@@ -347,8 +382,7 @@ body{
   /* Features area start */
 #features{
     background-color: #F7FAFD;
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding: 100px 0;
 }
 #features .features-caption h2{
     color: #3B566E;
@@ -725,5 +759,324 @@ footer .socials li{
     left: 0;
     top: 15%;
 }
+#toCloud{
+    background-color: #F7FAFD;
+    padding: 100px 0px;
+}
+#toCloud .link {
+    width: 540px;
+    height: 230px;
+    box-shadow:0px 0px 30px #ccc;
+    background-color: white;
+    display: flex;
+}
+#toCloud  a{
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+#toCloud  a:hover .icon-holder{
+    transform: rotate(45deg);
+  transition: 0.5s;
+}
+#toCloud .link .icon-holder{
+    background-color: #F7F6FF;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 17%;
+    left: 10%;
+    border-radius: 7px;
+    transition: transform 0.5s;
+}
+#toCloud .link .icon-holder img{
+    position: absolute;
+    left: 30%;
+    top: 28%;
+}
+#toCloud .link .link-text{
+    position: absolute;
+    top: 55px;
+    right: 30px;
+    width: 315px;
+    height: 120px;
+}
+#faq {
+    padding: 100px 0;
+}
+#faq .faq-text{
+    width: 540px;
+    height: 250px;
+}
+#faq .faq-text a{
+    background-color: #1A153A;
+    color: white;
+    padding: 10px 30px;
+    font-size: 12px;
+    font-weight: 600;
+}
+#faq .faq-text a:hover{
+    background-color:  #100b2c;
+}
+#faq .faq-text h3{
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #1A153A;
+}
+#faq .faq-text p{
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.88px;
+    line-height: 30px;
+    color: #6F8BA4;
+}
+#blog{
+    background-color: #F7FAFD;
+    padding: 100px 0px;
+}
+#blog .blogImage{
+    border-radius: 10px;
+    overflow: hidden;
+}
+#blog .picture{
+    width: 730px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+#blog .picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#blog .picture .apr{
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.336);
+    color: white;
+    bottom: -5px;
+    left: 43%;
+}
+#blog .blog-info{
+    text-align: center;
+    padding: 30px 30px;
+    background-color: white;
+}
+#blog .blog-info .blog-icons{
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+#blog .blog-info .blog-icons span{
+    margin-right: 20px;
+}
+#blog .blog-info .blog-description{
+    line-height: 30px;
+}
+#blog .blog-info .blog-description p{
+    color: #6F8BA4;
+}
+#blog .blog-info .blog-description h6{
+    color: #3B566E;
+}
+#blog .blog-info .blog-description h6:hover{
+    color: #1A153A;
+    cursor: pointer;
+}
+#blog .blog-info a{
+    background: #1A153A;
+    color: white;
+    font-size: 13px;
+    padding: 10px 30px;
+    margin-bottom: 25px;
+}
+#blog .blogImage2{
+    border-radius: 6px;
+    overflow: hidden;
+}
+#blog .picture2{
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+#blog .picture2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#blog .picture2 .apr2{
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.336);
+    color: white;
+    bottom: -5px;
+    left: 43%;
+}
+#blog .blog-info2{
+    text-align: center;
+    padding: 30px 30px;
+    background-color: white;
+}
+#blog .blog-info2 .blog-icons2{
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+#blog .blog-info2 .blog-icons2 span{
+    margin-right: 20px;
+}
+#blog .blog-info2 .blog-description2{
+    line-height: 30px;
+}
+#blog .blog-info2 .blog-description2 p{
+    color: #6F8BA4;
+}
+#blog .blog-info2 .blog-description2 h6{
+    color: #3B566E;
+}
+#blog .blog-info2 .blog-description2 h6:hover{
+    color: #1A153A;
+    cursor: pointer;
+}
+#blog .blog-info2 a{
+    background: #1A153A;
+    color: white;
+    font-size: 13px;
+    padding: 10px 30px;
+    margin-bottom: 25px;
+}
+#blog  .list-group{
+    border: none !important;
+}
+#blog form input{
+    border: 1px solid #fff;
+    outline: none;
+    padding-left: 20px;
+    padding-right: 50px;
+    width: 348px;
+    height: 45px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 2px 48px 0 rgb(0 0 0 / 6%);
+}
+#blog form .form-icon{
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    height: 35px;
+    width: 35px;
+    color: white;
+    background: linear-gradient(127deg, #1A153A 0%, #565178 91%);
+    border-radius: 4px;
+}
+#blog form .form-icon i{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    font-size: 20px;
+}
+#blog  #blog-list{
+    box-shadow: 0 2px 48px 0 rgb(0 0 0 / 6%);
+}
+#blog  #blog-list li{
+    border: none !important;
+}
+#blog  #blog-list li:hover{
+    cursor: pointer;
+}
 
-  
+#blog  #blog-list li a{
+  text-decoration: none;
+  color: #3B566E;
+  font-size: 14px;
+  letter-spacing: 1px;
+  /* border-bottom: 1px solid #ECF7FF; */
+  transition: padding-left 0.5s;
+}
+#blog  #blog-list li:hover a{
+    padding-left: 15px;
+    transition: 0.5s;
+ }
+#blog  #blog-list i{
+    color:#3B566E ;
+    padding: 10px 10px;
+}
+#blog #blog-list li span{
+    float: right;
+    color: white;
+    background-color: #100b2c;
+    padding: 0px 5px;
+    border-radius: 30px;
+    font-size: small;
+}
+#blog .tags{
+    margin-top: 15px;
+    padding: 15px 10px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 2px 48px 0 rgb(0 0 0 / 6%);
+}
+#blog .tags a{
+    color: #1A153A;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: #f5f5f5;
+    padding: 6px 10px;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+#blog .appImage{
+    width: 350px;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 4px;
+    position: relative;
+}
+#blog .appImage .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#blog .appImage .image .covering{
+    position: absolute;
+    background: #3C3761;
+    opacity: 0.8;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+#blog .appImage .image .covering-info{
+    position: absolute;
+    color: white;
+    top: 40px;
+    padding: 10px 10px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.12px;
+    font-weight: 600;
+    text-align: center;
+}
+#blog .appImage .image .covering-info a{
+    color: #1A153A;
+    background: white;
+    padding: 5px 30px;
+    font-size: 12px;
+    font-weight: bolder;
+}
+#blog #paging {
+    padding-left: 23%;
+}
+#blog #paging a{
+   color: black;
+}
+
+
