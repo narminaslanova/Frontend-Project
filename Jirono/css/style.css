@@ -178,7 +178,7 @@ body{
     left: 0;
   
 }
-@media only screen and (max-width:375px){
+@media only screen and (min-width:375px) and (max-device-width : 768px){
     .parallax-home2 .parallax-info{
         top: 0;
         left: 0;
@@ -329,6 +329,26 @@ body{
 }
 .nav-menu-others .nav-list .nav-item a{
     font-weight: 400;
+}
+.nav-menu-others .dropdown .dropdown-menu{
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-5%);
+
+}
+ 
+.nav-menu-others .dropdown:hover .dropdown-menu{
+    /* display: block; */
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: all 0.3s;
+    
+    
+}
+.nav-menu-others .dropdown .dropp-item:hover .dropdown-menu{
+    display: block;
 }
 .nav-menu .logo{
     margin-top: 3px;
@@ -502,6 +522,7 @@ body{
 }
 .same .card{
     position: relative;
+    /* margin-bottom: 30px; */
     height: 250px; 
     box-shadow: 0px 0px 30px #ccc;
     transition: 0.3s;
@@ -544,12 +565,12 @@ body{
     padding-top: 20px;
 }
  /* Welcome area end */
-@media only screen and (max-width:375px){
+ @media only screen and (min-width:375px) and (max-width : 768px){
     #welcome .caption{
         text-align: center;
     }
 
-    .same .card{
+    #welcome  .card{
       margin-bottom: 30px;
     }
    #welcome .welcome-grid {
@@ -560,7 +581,33 @@ body{
         text-align: left;
         padding-right: 14px;
     }
+    .same .card .features-icon{
+        left: 130px;
+        top: 15px;
+    }
+    #design .design-caption h2{
+        padding-top: 30px;
+    }
+    
 }
+
+@media only screen and (min-width:768px) and (max-width :1024px){
+    #welcome .caption{
+        text-align:center;
+    }
+    #welcome .welcome-grid {
+        margin-left: 90px;
+    }
+    #design .design-caption h2{
+        padding-top: 30px;
+    }
+    .same .card .features-icon{
+        left: 130px;
+        top: 15px;
+    }
+    
+}
+
   /* Features area start */
 #features{
     background-color: #F7FAFD;
@@ -761,7 +808,7 @@ body{
 #our-team .team-item .team-image .image{
        position: absolute;
        bottom: -40px;
-       left: 50px;
+       left: 10px;
 }
 #our-team .team-item .team-image .image img{
     padding: 6px;
@@ -770,12 +817,25 @@ body{
     background-color: white;
     box-shadow: 0 2px 48px 0 rgb(0 0 0 / 8%);
 }
-@media only screen and (max-width:768px){
+@media only screen and (min-width:375px) and (max-device-width : 768px){
+    #our-team .team-item .team-image .image{
+        left:50px;
+    }
     #our-team .team-item{
         margin-bottom: 60px;
     }
     #our-team .team-item .team-image .image{
         bottom: 20px;
+        left:50px;
+    }
+}
+@media only screen and (min-width:768px) and (max-device-width : 1024px){
+    #our-team .team-item{
+        margin-bottom: 60px;
+    }
+    #our-team .team-item .team-image .image{
+        bottom: 20px;
+        left:50px;
     }
 } 
 #pricing-plans .animated__delay-5{
@@ -980,6 +1040,7 @@ footer .socials li{
     color: white;
     letter-spacing: 1px;
 }
+
 #ways{
     padding: 100px 0px;
     background-color: #F7FAFD;
@@ -1093,6 +1154,22 @@ footer .socials li{
     width: 315px;
     height: 120px;
 }
+@media only screen and (min-width: 375px) and (max-width: 768px){
+   
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    #toCloud {
+        padding-left: 100px;
+    }
+    #toCloud .link .link-text{
+        right: 130px;
+    }
+    #toCloud .link{
+        margin-bottom: 30px;
+        
+    }
+}
 #faq {
     padding: 100px 0;
 }
@@ -1122,6 +1199,11 @@ footer .socials li{
     line-height: 30px;
     color: #6F8BA4;
 }
+#faq .card-body{
+    display: none;
+}
+
+
 #blog{
     background-color: #F7FAFD;
     padding: 100px 0px;
