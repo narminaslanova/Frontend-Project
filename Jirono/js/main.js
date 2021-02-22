@@ -32,6 +32,37 @@ $(function(){
             })
         }
     });
+
+    if($("#design a.designList").length!=0){
+        $(document).on("mouseenter", "#design a.designList", function(){
+
+            
+            if(!$(this).hasClass("active2")){
+                $(this).addClass("active")
+            }
+        })
+        $(document).on("mouseleave", "#design a.designList", function(){
+            if(!$(this).hasClass("active2")){
+            $(this).removeClass("active")
+            }
+        })
+    };
+    if($("#features a.designList").length!=0){
+        $(document).on("mouseenter", "#features a.designList", function(){
+
+            
+            if(!$(this).hasClass("active2")){
+                $(this).addClass("active")
+            }
+        })
+        $(document).on("mouseleave", "#features a.designList", function(){
+            if(!$(this).hasClass("active2")){
+            $(this).removeClass("active")
+            }
+        })
+    };
+
+   
    //counter
 
     if($("#countTo").length){
