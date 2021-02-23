@@ -1139,6 +1139,9 @@ footer .socials li{
 #faq .card-body{
     display: none;
 }
+#accordion{
+    margin-top: 20px !important;
+}
 
 
 #blog{
@@ -1346,6 +1349,10 @@ footer .socials li{
     font-size: 14px;
     text-decoration: none;
     border-radius: 3px;
+}
+#blog .tags a:hover{
+    background-color: #6F8BA4;
+    color: white;
 }
 #blog .appImage{
     /* width: 350px;
