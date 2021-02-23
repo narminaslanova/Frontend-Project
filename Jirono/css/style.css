@@ -11,7 +11,6 @@ body{
     background: #1A153A;
     
 }
-
 .loader-image{
     position: fixed;
       left: 0px;
@@ -23,18 +22,16 @@ body{
       background-size: 100px;
       text-align: center;
 }
-
 #ParallaxCounter {
     border: 0;
     margin: 0;
     padding-bottom: 0;
-    background-image: url(../images/parallax.jpg);
+    background-image: url('../images/parallax.jpg');
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 100px;
 }
-
 #ParallaxCounter .parallaxContent {
     position: relative;
     left: 0;
@@ -43,7 +40,6 @@ body{
     bottom: 0;
     background: #1a153ad1;
 }
-
 #ParallaxCounter .parallaxContent .text {
     text-align: center;
     margin-bottom: 80px;
@@ -52,13 +48,11 @@ body{
     bottom: 0;
     transition: bottom .3s;
 }
-
 #ParallaxCounter .parallaxContent .text:hover {
-    /* transform: translateY(-20px); */
+    transform: translateY(-20px);
     bottom: 20px;
     transition: all .3s;
 }
-
 #ParallaxCounter .parallaxContent .text p.display-4.number {
     text-align: center;
     color: white;
@@ -71,97 +65,50 @@ body{
     padding-bottom: 20px;
     margin-bottom: 10px;
 }
-
 #ParallaxCounter .parallaxContent .text p.line {
     color: white;
     margin-bottom: 5px;
     font-size: 20px;
     font-weight: 400;
 }
-
-/* #parallax-stuff {
-    background: url('../images/parallax.jpg') no-repeat fixed;
+#Parallax{
+    border: 0;
+    margin: 0;
+    padding-bottom: 0;
+    background-image: url('../images/parallax.jpg');
     background-size: cover;
-    height: 300px;
-    
-   
-} */
-
-/* @media only screen and (max-width: 768px){
-    #parallax-stuff {
-        height: 432px;
-    }
-    .parallax-home{
-        height: 432px;
-    }
-} */
-
-/* .parallax-home{
-    position: relative;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: #1a153ad1;
-    height: 300px;
-    
-} */
-/* .parallax-home .cover-image{
-    background-color:#1A153A ;
-    opacity: 0.8;
-    height: 100%;
-    background-size: cover;
-    
-} */
-/* .parallax-home #countTo{
-    color: white;
-    padding-top: 50px;
-   position: absolute;
-   top: 0px;
-   left: 19%;
-} 
-.parallax-home #countTo .count-item {
-    margin-right: 180px;
-    height: 300px;
-    transition: transform 0.3s;
-}
-.parallax-home #countTo .count-item:hover{
-    transform: translate(0, -6px);
-    transition: 0.3s;
-}
-.parallax-home #countTo .count-item .timer{
-    font-size: 60px;
-}
-
-.parallax-home #countTo .count-item .timer::before{
-    content: '';
-    width: 100px;
-    position: absolute;
-    border-top: 1px dashed white;
-    top: 75px;
-    left: 0px;
-} */
-.parallax-home2{
-    background: url('../images/parallax.jpg') no-repeat fixed;
-    background-size: cover;
-    height: 250px;
-    position: relative;
-}
-.parallax-home2 .cover-image2{
-    background-color:#1A153A ;
-    opacity: 0.8;
-    height: 100%;
-    background-size: cover;
-}
-.parallax-home2 .parallax-info{
-    color: white;
-    padding-top: 50px;
-    position: absolute;
-    top: 0px;
-    left: 19%;
+    background-attachment: fixed;
     text-align: center;
+    padding-top: 80px;
 }
-.parallax-home2 .parallax-info a{
+
+#Parallax .ParallaxContent {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #1a153ad1;
+}
+#Parallax .ParallaxContent .about-caption {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    bottom: 0;
+    color: white;
+}
+#Parallax .ParallaxContent .about-caption a{
+    color: white;
+    text-decoration: none;
+    padding-right: 5px;
+}
+#Parallax .ParallaxContent .about-caption p{
+    padding-left: 5px;
+}
+#Parallax.start.home{
+    padding-top: 0px;
+}
+#Parallax.start.home a{
     padding: 10px 30px;
     background-color: white;
     color: #1A153A;
@@ -169,88 +116,15 @@ body{
     margin-top: 50px;
     font-weight: 800;
 }
-.parallax-about{
-    background: url('../images/2.jpg') no-repeat fixed;
-    background-size: cover ;
-    height: 400px;
-    position: relative;
-    top: 0;
-    left: 0;
-  
-}
-@media only screen and (min-width:375px) and (max-device-width : 768px){
-    .parallax-home2 .parallax-info{
-        top: 0;
-        left: 0;
-    }
-}
-.parallax-about .about-caption{
-    color: white;
-    padding-top: 70px;
-    position: absolute;
-    top: 33%;
-    left: 44%;
-    text-align: center;
-    letter-spacing: 1px;
-}
-.parallax-about .about-caption a{
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-    padding-right: 7px;
-    font-weight: 300;
-}
-
-.parallax-about .cover-image{
-    background-color:#1A153A ;
-    opacity: 0.4;
-    height: 100%;
-    background-size: cover;
-    padding-bottom: 50px;
-    position: relative;
-}
-.parallax-features {
-    background: url('../images/3.jpg') no-repeat fixed;
-    background-size: cover ;
-    height: 400px;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-.parallax-features .cover-image{
-    background-color:#1A153A ;
-    opacity: 0.5;
-    height: 100%;
-    background-size: cover;
-    padding-bottom: 50px;
-    position: relative;
-}
-.parallax-features .about-caption{
-    color: white;
-    padding-top: 70px;
-    position: absolute;
-    top: 20%;
-    left: 42%;
-    text-align: center;
-    letter-spacing: 1px;
-}
-.parallax-features .about-caption a{
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-    padding-right: 7px;
-    font-weight: 300;
-}
  /* Navbar start */
 .nav-menu{
-    /* background-color: transparent; */
     left: 0;
     right: 0;
     z-index: 999;
+    top: 0;
     position: absolute;
     transition: all 0.5s;
     height: 100px ;
-   
 }
 .nav-menu .nav-list .nav-item a{
     font-weight: 400;
@@ -260,17 +134,13 @@ body{
     opacity: 0;
     visibility: hidden;
     transform: translateY(-5%);
-
 }
- 
+
 .nav-menu .dropdown:hover .dropdown-menu{
-    /* display: block; */
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
     transition: all 0.3s;
-    
-    
 }
 .nav-menu .dropdown .dropp-item:hover .dropdown-menu{
     display: block;
@@ -322,7 +192,7 @@ body{
     left: 0;
     right: 0;
     z-index: 999;
-    position: absolute;
+    position: fixed;
     transition: all 0.5s;
     height: 80px ;
     transition: all 0.5s;
@@ -335,17 +205,13 @@ body{
     opacity: 0;
     visibility: hidden;
     transform: translateY(-5%);
-
 }
  
 .nav-menu-others .dropdown:hover .dropdown-menu{
-    /* display: block; */
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
     transition: all 0.3s;
-    
-    
 }
 .nav-menu-others .dropdown .dropp-item:hover .dropdown-menu{
     display: block;
@@ -398,6 +264,7 @@ body{
     color: white !important;
 }
 /* Navbar end */
+
 
  /* Welcome area start */
 #welcome{
@@ -515,7 +382,7 @@ body{
     padding-top: 60px;
     padding-left: 10px;
     padding-right: 10px;
-    z-index: 999;
+    z-index: 5;
 }
 #welcome .welcome-grid  .item4 .image .content:hover +img{
     transform: scale(1.1)
@@ -565,48 +432,8 @@ body{
     padding-top: 20px;
 }
  /* Welcome area end */
- @media only screen and (min-width:375px) and (max-width : 768px){
-    #welcome .caption{
-        text-align: center;
-    }
 
-    #welcome  .card{
-      margin-bottom: 30px;
-    }
-   #welcome .welcome-grid {
-        margin-left: 0px;
-    }
-    #welcome .item4 .content p {
-        font-size: 13px;
-        text-align: left;
-        padding-right: 14px;
-    }
-    .same .card .features-icon{
-        left: 130px;
-        top: 15px;
-    }
-    #design .design-caption h2{
-        padding-top: 30px;
-    }
-    
-}
 
-@media only screen and (min-width:768px) and (max-width :1024px){
-    #welcome .caption{
-        text-align:center;
-    }
-    #welcome .welcome-grid {
-        margin-left: 90px;
-    }
-    #design .design-caption h2{
-        padding-top: 30px;
-    }
-    .same .card .features-icon{
-        left: 130px;
-        top: 15px;
-    }
-    
-}
 
   /* Features area start */
 #features{
@@ -817,27 +644,7 @@ body{
     background-color: white;
     box-shadow: 0 2px 48px 0 rgb(0 0 0 / 8%);
 }
-@media only screen and (min-width:375px) and (max-device-width : 768px){
-    #our-team .team-item .team-image .image{
-        left:50px;
-    }
-    #our-team .team-item{
-        margin-bottom: 60px;
-    }
-    #our-team .team-item .team-image .image{
-        bottom: 20px;
-        left:50px;
-    }
-}
-@media only screen and (min-width:768px) and (max-device-width : 1024px){
-    #our-team .team-item{
-        margin-bottom: 60px;
-    }
-    #our-team .team-item .team-image .image{
-        bottom: 20px;
-        left:50px;
-    }
-} 
+
 #pricing-plans .animated__delay-5{
     animation-delay: .15s;
 }
@@ -1040,143 +847,273 @@ footer .socials li{
     color: white;
     letter-spacing: 1px;
 }
+@media only screen and (max-width:375px) {
+    #welcome .caption{
+        text-align: center;
+    }
 
-#ways{
+    #welcome  .card{
+      margin-bottom: 30px;
+    }
+   #welcome .welcome-grid {
+        margin-left: 0px;   /*not working*/
+    }
+    #welcome .item4 .content p {
+        font-size: 13px;
+        text-align: left;
+        padding-right: 14px;
+    }
+    .same .card .features-icon{
+        left: 130px;  
+        top: 15px;
+    }
+    #design .design-caption h2{
+        padding-top: 30px;
+    }
+    #our-team .team-item .team-image .image{
+        left:50px;       /*not working*/
+    }
+    #our-team .team-item{
+        margin-bottom: 60px;
+    }
+    #our-team .team-item .team-image .image{
+        bottom: 20px;
+        left:50px;
+    }
+    
+}
+@media only screen and (max-width:812px) {
+    #welcome .caption{
+        text-align: center;
+    }
+    .same .card .features-icon{
+        left: 130px !important;            /*not working*/
+        top: 15px;
+    }
+    
+}
+@media only screen and (max-width : 768px){
+    #welcome .caption{
+        text-align:center;
+    }
+    #welcome .welcome-grid {
+        margin-left: 90px !important;
+    }
+    #design .design-caption h2{
+        padding-top: 30px;
+    }
+    .same .card .features-icon{
+        left: 130px;
+        top: 15px ;
+    }
+    #our-team .team-item .team-image .image{
+        /* bottom: 0px !important; */
+        left: 150px ;
+    }
+    
+}
+@media only screen and (max-width : 1024px){
+    #welcome .welcome-grid {
+        margin-left: 0px;
+    }
+    #our-team .team-item .team-image .image{
+        bottom: 0px !important;
+        left:0px !important;
+    }
+    #our-team .team-item{
+        margin-bottom: 60px;
+    }
+    
+
+}
+.ways{
     padding: 100px 0px;
     background-color: #F7FAFD;
 }
-#ways .text{
+.ways .text{
     text-align: center;
     letter-spacing: 1px;
     padding-bottom: 50px;
 }
-#ways .text h3{
+.ways .text h3{
     color: #3C3761;
 }
-#ways .text p{
+.ways .text p{
     color: #697BA2;
 }
-#ways .image{
-    width: 770px;
-    height: 500px;
+.ways .image{
     overflow: hidden;
     border-radius: 10px;
+    position: relative;
 }
-#ways .image img{
+.ways .image img{
     object-fit: cover;
-    height: 100%;
-    width: 100%;
+   max-width: 100%;
     transition: transform .4s;
 }
-#ways .image:hover img{
+.ways .image:hover img{
     transform: scale(1.1);
     transition: 0.4s;
 }
-#ways .layer{
+.ways .layer{
     background-color: white;
-    padding: 20px 20px;
-    position: absolute;
-    top: 10%;
-    width: 440px;
-    height: 360px;
-    right: 0px;
+    padding: 30px 32px;
     border-radius: 10px;
     box-shadow: 0 2px 48px 0 rgb(0 0 0 / 8%);
 }
-#ways .mis-layer{
-    top: 25%;
-}
-#ways .layer h5{
-    color: #3C3761;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
-}
-#ways .layer p{
+
+.ways .layer p{
     color: #6F8BA4;
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
     margin-bottom: 20px;
+    letter-spacing: 1px;
 }
-#ways .describing{
-    padding-top: 130px;
-    padding-bottom: 130px;
+.ways .move {
+    position: absolute;
+    top: 60px;
+    right: 0px;
 }
 
-.vis-image{
+.ways.second .move1 {
     position: relative;
-    padding-left: 350px;
+
 }
-#ways .vis-layer{
+
+.ways.second .layer{
     position: absolute;
-    left: 0;
-    top: 15%;
+    top: 60px;
+    left: 0px;
+    z-index: 2;
+    
 }
+
+
+@media only screen and (max-width: 375px){
+    .ways .move {
+        position: unset;
+        margin-top: 20px;
+    }
+    .ways.second .layer{
+        position: unset;
+        margin-bottom: 20px;
+    }
+    .same .card{
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 812px){
+    .ways .move {
+        position: unset;
+        margin-top: 20px;
+       
+    }
+    .ways.second .layer{
+        position: unset;
+        margin-bottom: 20px;
+    }
+    .same .card{
+        margin-bottom: 20px;
+    }
+    
+}
+@media only screen and (max-width: 768px){
+    .same .card .features-icon{
+        left: 130px !important;
+        top: 15px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .ways .move {
+        top: 30px;
+    }
+    .ways .layer p{
+        line-height: 20px;
+    }
+    .ways.second .layer{
+        margin-bottom: 20px;
+    }
+    .same .card{
+        margin-bottom: 20px;
+    }
+    .same .card .features-icon{
+        
+        left: 70px;
+        top: 15px;
+    }
+}
+
 #toCloud{
     background-color: #F7FAFD;
     padding: 100px 0px;
 }
 #toCloud .link {
-    width: 540px;
-    height: 230px;
     box-shadow:0px 0px 30px #ccc;
     background-color: white;
+    padding: 40px 30px;
+}
+#toCloud .icon-image{
+    position: relative;
+    z-index: 1;
+    width: 130px;
+    height: 130px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+    
+}
+
+#toCloud .icon-image::before{
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background-color: rgb(247, 246, 255);
+    z-index: -1;
+    transition: 0.3s;
+}
+#toCloud a:hover ::before{
+    transform: rotate(45deg);
+    transition: 0.3s;
 }
 #toCloud  a{
     text-decoration: none;
     display: block;
     color: black;
 }
-#toCloud  a:hover .icon-holder{
-    transform: rotate(45deg);
-  transition: 0.5s;
-}
-#toCloud .link .icon-holder{
-    background-color: #F7F6FF;
-    width: 130px;
-    height: 130px;
-    position: absolute;
-    top: 17%;
-    left: 10%;
-    border-radius: 7px;
-    transition: transform 0.5s;
-}
-#toCloud .link  .icon-image{
-    position: absolute;
-    left: 17%;
-    top: 34%;
-}
-#toCloud .link .link-text{
-    position: absolute;
-    top: 55px;
-    right: 30px;
-    width: 315px;
-    height: 120px;
-}
-@media only screen and (min-width: 375px) and (max-width: 768px){
-   
 
+#toCloud .link .link-text{
+    padding-left: 60px;
+    font-size: 14px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-    #toCloud {
-        padding-left: 100px;
+@media only screen and (max-width: 375px){
+    #toCloud .link{
+        margin-bottom: 40px;
+        flex-direction: column;
     }
     #toCloud .link .link-text{
-        right: 130px;
+        padding-top: 20px;
+        padding-left: 0px;
+        text-align: center;
     }
-    #toCloud .link{
-        margin-bottom: 30px;
-        
+    #toCloud .icon-image{
+        margin-left: 70px;
     }
 }
+@media only screen and (max-width: 812px){
+    #toCloud .link{
+        margin-bottom: 40px;
+    }
+    
+}
+
+
 #faq {
     padding: 100px 0;
 }
-#faq .faq-text{
-    width: 540px;
-    height: 250px;
-}
+
 #faq .faq-text a{
     background-color: #1A153A;
     color: white;
@@ -1211,16 +1148,16 @@ footer .socials li{
 #blog .blogImage{
     border-radius: 10px;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 #blog .picture{
-    width: 730px;
     height: 400px;
     overflow: hidden;
     position: relative;
+
 }
 #blog .picture img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
     object-fit: cover;
 }
 #blog .picture .apr{
@@ -1269,10 +1206,11 @@ footer .socials li{
 #blog .blogImage2{
     border-radius: 6px;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 #blog .picture2{
-    width: 350px;
-    height: 200px;
+    /* width: 350px;
+    height: 200px; */
     overflow: hidden;
     position: relative;
 }
@@ -1395,6 +1333,7 @@ footer .socials li{
     overflow: hidden;
     border-radius: 4px;
     box-shadow: 0 2px 48px 0 rgb(0 0 0 / 6%);
+    margin-bottom: 30px;
 }
 #blog .tags a{
     color: #1A153A;
@@ -1409,15 +1348,36 @@ footer .socials li{
     border-radius: 3px;
 }
 #blog .appImage{
-    width: 350px;
-    height: 230px;
+    /* width: 350px;
+    height: 230px; */ 
+    
     overflow: hidden;
     border-radius: 4px;
     position: relative;
 }
+#blog .appImage .image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30%;
+}
+#blog .appImage .image::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: #372b86;
+    opacity: 0.8;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    
+    
+}
 #blog .appImage .image img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    /* height: 100%; */
     object-fit: cover;
 }
 #blog .appImage .image .covering{
@@ -1431,13 +1391,16 @@ footer .socials li{
 #blog .appImage .image .covering-info{
     position: absolute;
     color: white;
-    top: 40px;
-    padding: 10px 10px;
+    /* top: 40px; */
+    /* padding: 10px 10px; */
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 1.12px;
     font-weight: 600;
     text-align: center;
+    z-index: 2;
+
+    
 }
 #blog .appImage .image .covering-info a{
     color: #1A153A;
@@ -1446,11 +1409,36 @@ footer .socials li{
     font-size: 12px;
     font-weight: bolder;
 }
-#blog #paging {
-    padding-left: 23%;
-}
+
 #blog #paging a{
    color: black;
 }
-
-
+@media only screen and (max-width: 375px){
+    #blog .blogImage{
+        margin-bottom: 20px;
+    }
+    #blog .blogImage2{
+        margin-bottom: 20px;
+    }
+    #blog .search{
+        width: 100% !important;
+    }
+    #blog form .form-icon{
+        top: 15px;
+    }
+   
+}
+@media only screen and (max-width: 812px){
+    #blog .search{
+        width: 100% !important;
+        margin-top: 10px;
+    }
+    #blog form .form-icon{
+        top: 15px;
+    }
+}
+@media only screen and (max-width:1024px){
+    #blog .search{
+        width: unset;
+    }
+}

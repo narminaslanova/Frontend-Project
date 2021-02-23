@@ -2,6 +2,8 @@
 $(function () {
     $(window).on("load", function () {
         $(".loader-image").fadeOut("hide");
+
+       
     });
 
     $(document).on("scroll", window, function () {
@@ -9,29 +11,50 @@ $(function () {
             $(".nav-menu").css({
                 "position": "fixed",
                 "background-color": "white",
-                "height": "80px"
+                "height": "80px",
+                "z-index":"999",
+                "left":"0",
+                "top":"0",
+                "right":"0"
+
 
             });
             $("#up").css({
                 "background": "linear-gradient(135deg, #1A153A 0%, #565178 100%)"
             })
             $(".nav-menu-others").css({
-                "position": "fixed"
+                "position": "fixed",
+                "z-index":"999",
+                "left":"0",
+                "top":"0",
+                "right":"0"
             })
         } else {
             $(".nav-menu").css({
                 "position": "absolute",
                 "background-color": "transparent",
-                "height": "100px"
+                "height": "100px",
+                "z-index":"999",
+                "left":"0",
+                "top":"0",
+                "right":"0"
             });
             $("#up").css({
                 "background": "#1A153A"
             });
             $(".nav-menu-others").css({
-                "position": "fixed"
+                "position": "fixed",
+                "z-index":"999",
+                "left":"0",
+                "top":"0",
+                "right":"0"
             })
         }
+       
     });
+
+
+   
 
     if ($("#design a.designList").length != 0) {
         $(document).on("mouseenter", "#design a.designList", function () {
