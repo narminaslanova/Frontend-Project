@@ -3,61 +3,65 @@ $(function () {
     $(window).on("load", function () {
         $(".loader-image").fadeOut("hide");
 
-       
-    });
 
+    });
+     
     $(document).on("scroll", window, function () {
         if ($(window).scrollTop() > 100) {
             $(".nav-menu").css({
                 "position": "fixed",
                 "background-color": "white",
                 "height": "80px",
-                "z-index":"999",
-                "left":"0",
-                "top":"0",
-                "right":"0"
+                "z-index": "999",
+                "left": "0",
+                "top": "0",
+                "right": "0"
 
 
             });
             $("#up").css({
-                "background": "linear-gradient(135deg, #1A153A 0%, #565178 100%)"
+                "background": "linear-gradient(135deg, #1A153A 0%, #565178 100%)",
+                
             })
             $(".nav-menu-others").css({
                 "position": "fixed",
-                "z-index":"999",
-                "left":"0",
-                "top":"0",
-                "right":"0"
+                "z-index": "999",
+                "left": "0",
+                "top": "0",
+                "right": "0"
             })
         } else {
             $(".nav-menu").css({
                 "position": "absolute",
                 "background-color": "transparent",
                 "height": "100px",
-                "z-index":"999",
-                "left":"0",
-                "top":"0",
-                "right":"0"
+                "z-index": "999",
+                "left": "0",
+                "top": "0",
+                "right": "0"
             });
             $("#up").css({
                 "background": "#1A153A"
             });
             $(".nav-menu-others").css({
                 "position": "fixed",
-                "z-index":"999",
-                "left":"0",
-                "top":"0",
-                "right":"0"
+                "z-index": "999",
+                "left": "0",
+                "top": "0",
+                "right": "0"
             })
         }
-       
+        
+
     });
 
 
    
 
+
     if ($("#design a.designList").length != 0) {
         $(document).on("mouseenter", "#design a.designList", function () {
+
 
 
             if (!$(this).hasClass("active2")) {
@@ -85,30 +89,20 @@ $(function () {
         })
     };
 
-
-    $(document).on("click", ".card-header", function () {
-        var id = this.id;
-        $(".card-body").each(function () {
-
-            console.log($("#" + id).next()[0].id != this.id);  
-        })/* Selecting div after h1 */
-        // $(".card-body").each(function () {
-
-        //     if ($("#" + id).next()[0].id != this.id) {
-        //         $(this).slideUp();
-        //     }
-
-        // });
-        // $('.card-body').slideUp();
-        // $(this).next().toggle();  
+    $(document).on("mouseenter", "#our-team .card", function(){
+       $(this).find(".cardImage .image img").addClass("active3");
     })
-
+   
+    $(document).on("mouseleave", "#our-team .card", function(){
+        $(this).find(".cardImage .image img").removeClass("active3");
+    })
 
     //counter
 
-    if ($("#countTo").length) {
+    if ($("#ParallaxCounter").length) {
         $('.timer').countTo();
     }
+    
 
     if ($(window).scrollTop() > 100) {
         $(".nav-menu").css({
