@@ -28,13 +28,22 @@
                 <a class="logo navbar-brand" href="#">
                     <img src="images/logo-dark.png" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">
-                        <i class="fas fa-bars"></i>
-                    </span>
-                </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <a href="#" class="hamburger">
+                        <div class="hamburgerIcon">
+                            <span class="before">
+                                
+                            </span>
+                            <span class="regular">
+                              
+                            </span>
+                            <span class="after">
+                                
+                            </span>
+                        </div>
+                    </a>
+                  </button>
+              
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav-list navbar-nav mr-auto">
@@ -46,7 +55,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Discover
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu navbarHoverBlock breakPoint" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#features">Features</a>
                                 <a class="dropdown-item" href="#our-team">Our team</a>
                                 <a class="dropdown-item" href="#pricing-plans">Pricing Plans</a>
@@ -58,7 +67,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Pages
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu  navbarHoverBlock breakPoint" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="aboutus.html">About Us</a>
                                 <a class="dropdown-item" href="features.html">Features</a>
                                 <a class="dropdown-item" href="faq.html">FAQ's</a>
@@ -99,36 +108,41 @@
                             <a class="btn btn-outline-dark" id="learn" href="#">LEARN MORE</a>
                         </div>
                     </div>
-                    <div class="welcome-grid">
-                        <div class="item item1">
-                            <div class="image">
-                                <img src="images/1.jpg" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="item item2">
-                            <div class="image">
-                                <img src="images/2.jpg" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="item item3">
-                            <div class="image">
-                                <img src="images/3.jpg" class="img-fluid">
-                            </div>
-                            <div class="item3-icon">
-                                <i class="fas fa-play"></i>
-                            </div>
-                        </div>
-                        <div class="item item4">
-                            <div class="image">
-                                <div class="content">
-                                    <strong>Our goal:</strong>
-                                    <p>“We create technology for a sustainable future.”</p>
+                    <div class="offset-lg-1 col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                        <div class="parent">
+                            <div class="div1">
+                                <div class="image">
+                                    <img src="images/1.jpg" class="img-fluid">
                                 </div>
-                                <img src="images/1 (1).jpg" class="img-fluid">
+                            </div>
+                            <div class="div2">
+                                <div class="image">
+                                    <img src="images/2.jpg" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="div3">
+                                <div class="image">
+                                    <img src="images/3.jpg" class="img-fluid">
+                                </div>
+                                <div class="div3-icon">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="div4">
+                                <div class="image">
+                                    <div class="content">
+                                        <strong>Our goal:</strong>
+                                        <p>“We create technology for a sustainable future.”</p>
+                                    </div>
+                                    <img src="images/1 (1).jpg" class="img-fluid">
+                                   
+                                </div>
                             </div>
                         </div>
                     </div>
+                   
                 </div>
+
                 <div class="row same mt-5 mb-5">
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="card wow animate__fadeInUp animate__animated animated__delay-1">
@@ -317,15 +331,16 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                             <div class="text">
-                                <p class="display-4 number num"><span class="timer" data-from="0" data-to="96"></span></p>
+                                <p class="display-4 number num"><span class="timer" data-from="0" data-to="96"></span>
+                                </p>
                                 <p class="line">Project</p>
                                 <p class="line">Complate</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                             <div class="text">
-                                <p class="display-4 number num"><span class="timer" data-from="0"
-                                        data-to="190"></span></p>
+                                <p class="display-4 number num"><span class="timer" data-from="0" data-to="190"></span>
+                                </p>
                                 <p class="line">Happy</p>
                                 <p class="line">Costumer</p>
                             </div>
@@ -367,99 +382,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <!-- <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="team-item">
-                            <div class="team-card">
-                                <div class="team-information">
-                                    <h5>Fletch Skinner</h5>
-                                    <span>Product Strategist</span>
-                                </div>
-                                <ul class="team-social">
-                                    <li><i class="fab fa-facebook-f"></i></li>
-                                    <li><i class="fab fa-twitter"></i></li>
-                                    <li><i class="fab fa-linkedin-in"></i></li>
-                                    <li><i class="fab fa-github"></i></li>
-                                </ul>
-                                <p>Proin arcu ligula, malesuada <span class="d-block"> id tincidunt laoreet,
-                                        facilisis at justo. Sed at lorem.</span></p>
-                                <div class="team-image">
-                                    <div class="image">
-                                        <img src="images/team1.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="team-item">
-                            <div class="team-card">
-                                <div class="team-information">
-                                    <h5>Fletch Skinner</h5>
-                                    <span>Product Strategist</span>
-                                </div>
-                                <ul class="team-social">
-                                    <li><i class="fab fa-facebook-f"></i></li>
-                                    <li><i class="fab fa-twitter"></i></li>
-                                    <li><i class="fab fa-linkedin-in"></i></li>
-                                    <li><i class="fab fa-github"></i></li>
-                                </ul>
-                                <p>Proin arcu ligula, malesuada <span class="d-block"> id tincidunt laoreet,
-                                        facilisis at justo. Sed at lorem.</span></p>
-                                <div class="team-image">
-                                    <div class="image">
-                                        <img src="images/team2.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="team-item">
-                            <div class="team-card">
-                                <div class="team-information">
-                                    <h5>Fletch Skinner</h5>
-                                    <span>Product Strategist</span>
-                                </div>
-                                <ul class="team-social">
-                                    <li><i class="fab fa-facebook-f"></i></li>
-                                    <li><i class="fab fa-twitter"></i></li>
-                                    <li><i class="fab fa-linkedin-in"></i></li>
-                                    <li><i class="fab fa-github"></i></li>
-                                </ul>
-                                <p>Proin arcu ligula, malesuada <span class="d-block"> id tincidunt laoreet,
-                                        facilisis at justo. Sed at lorem.</span></p>
-                                <div class="team-image">
-                                    <div class="image">
-                                        <img src="images/team3.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="team-item">
-                            <div class="team-card">
-                                <div class="team-information">
-                                    <h5>Fletch Skinner</h5>
-                                    <span>Product Strategist</span>
-                                </div>
-                                <ul class="team-social">
-                                    <li><i class="fab fa-facebook-f"></i></li>
-                                    <li><i class="fab fa-twitter"></i></li>
-                                    <li><i class="fab fa-linkedin-in"></i></li>
-                                    <li><i class="fab fa-github"></i></li>
-                                </ul>
-                                <p>Proin arcu ligula, malesuada <span class="d-block"> id tincidunt laoreet,
-                                        facilisis at justo. Sed at lorem.</span></p>
-                                <div class="team-image">
-                                    <div class="image">
-                                        <img src="images/team4.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                   
+                    
                     <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="cardBody">
