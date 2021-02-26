@@ -346,25 +346,32 @@ body{
     .div1{
         width: 264px;
         height: 300px;
+        border-radius: 7px;
     }
+    
     .div2{
         width: 264px;
         height: 230px;
+        border-radius: 7px;
     }
+    
     .div3{
         width: 264px;
         height: 200px;
         position: relative;
+        border-radius: 7px;
     }
     .div4{
         width: 264px;
         height: 270px;
         position: relative;
+        border-radius: 7px;
     }
 .div1 .image{
     width: 100%;
     height: 300px;
     overflow: hidden;
+    border-radius: 7px;
 }
 .div1 .image img{
     width: 100%;
@@ -376,6 +383,7 @@ body{
     width: 100%;
     height: 230px;
     overflow: hidden;
+    border-radius: 7px;
 }
 .div2 .image img{
     width: 100%;
@@ -387,6 +395,7 @@ body{
     width: 100%;
     height: 200px;
     overflow: hidden;
+    border-radius: 7px;
     
 }
 .div3 .image img{
@@ -417,6 +426,7 @@ body{
     width: 100%;
     height: 270px;
     overflow: hidden;
+    border-radius: 7px;
 }
 .div4 .image img{
     width: 100%;
